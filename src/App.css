@@ -17,22 +17,24 @@
   font-size: 6rem;
 }
 
-.App button {
-  height: 4rem;
+.link {
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
   width: 10rem;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 10px;
   color: #fff;
   font-family: cursive;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
   position: absolute;
   right: 8rem;
   top: 2rem;
 }
 
-.App button:hover {
+.link:hover {
   background-color: #fff;
   color: #000;
 }

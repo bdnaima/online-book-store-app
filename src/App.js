@@ -1,14 +1,17 @@
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+import Books from "./components/Books";
+import LandingPage from "./components/LandingPage";
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Books Codsfdsfrner</h1>
-      <div>
-        <button>Start Reading</button>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/books" element={<Books />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
